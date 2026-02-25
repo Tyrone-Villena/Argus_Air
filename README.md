@@ -1,11 +1,42 @@
-# Argus_AI-backup# Argus_AI-backup
-# Argus_AI-backup
-# Argus_AI-2nd
-# Argus_AI-2nd
-# argus_mac
-# argus_mac
-# argus_mac
-# argus_mac
-# argus_mac
-# Argus_Air
-# Argus_Air
+Project Overview
+This project is called AI Powered Cheating Detector project that uses Yolo Object Detection in detecting various objects like, phone, calculator, smartwatch, watch, and chairs. This project also uses Yolo Pose Estimation in detecting cheating behaviors during an exams.
+To train the AI, go to "machine_learning" folder and to check the working app after training simply go to "system" folder.
+Extract ffmpeg.exe from ffmpeg.rar in system/bin/ to system/bin/
+Caution!!
+When training data, you might want to watch out for the data's label IDs. To update the IDs, simply run change.py in "change id". Ensure that test, train, and valid folder's label's IDs are fully updated not just one folder.
+Install requirements on both folders
+For machine_learning
+cd machine_learning, then:
+pip install -r requirements.txt
+
+For system
+cd system, then:
+pip install -r requirements.txt
+
+This app is using FastAPI, here's how to run:
+For webcam =============
+python wcapp.py
+
+or
+py wcapp.py
+
+For an actual camera device =============
+python app.py
+
+or
+py app.py
+
+Using low-end device? Try this
+cd system
+py export_onnx.py
+
+P.S. Only run this if you run the app without seeing this:
+ONNX ✓ fast mode
+
+When updating the project every time there is an update
+git fetch origin main
+git checkout origin/main -- .
+
+For individual folders like machine_learning/system
+git checkout origin/main -- ./machine_learning/
+git checkout origin/main -- ./system/# Argus_Air
